@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  dev:
+    build: .
+    image: dev-starknet
+    volumes:
+      - ../..:/workspaces:cached
+    command: sleep infinity
