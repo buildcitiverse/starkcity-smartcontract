@@ -3,4 +3,3 @@
 account = "deployer"
 accounts-file = "/root/.starknet_accounts/starknet_open_zeppelin_accounts.json"
 url = "https://starknet-sepolia.public.blastapi.io/rpc/v0_7"
-# url = "https://starknet-sepolia.g.alchemy.com/starknet/version/rpc/v0_7/mZyFr_90NKxRaHUM2mgreCIsuvAGuRU-"

@@ -150,5 +150,10 @@ mod StarkCity {
                 return format!("{}{}", base_uri, self.token_uri_mapping.read(token_id));
             }
         }
+
+        #[external(v0)]
+        fn minted(ref self: ContractState, from: ContractAddress) -> bool {
+            self.init_minted.read(from)
+        }
     }
 }
