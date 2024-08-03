@@ -115,7 +115,7 @@ mod StarkCity {
         }
 
         #[external(v0)]
-        fn total_supply(ref self: ContractState) -> u256 {
+        fn total_supply(self: @ContractState) -> u256 {
             self.total_supply.read()
         }
 
@@ -152,7 +152,7 @@ mod StarkCity {
         }
 
         #[external(v0)]
-        fn minted(ref self: ContractState, from: ContractAddress) -> bool {
+        fn minted(self: @ContractState, from: ContractAddress) -> bool {
             self.init_minted.read(from)
         }
     }
